@@ -1,11 +1,12 @@
-
-import "./App.css";
-import Header from "./components/Header";
+import Body from "./components/Body";
+import UserContextProvider from "./context/UserContextProvider";
 
 function App() {
   return (
     <>
-      <Header />
+      <UserContextProvider>
+        <Body />
+      </UserContextProvider>
     </>
   );
 }
